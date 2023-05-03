@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar um Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <h1>Atividade Formulário</h1>
+    <h2>Preencha o formulário abaixo para participar do curso de HTML & CSS</h2>
+
+    <div>
+        
+        <form action="formularioAtividade5.html" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <table>
+                    <tr>
+                        <td><label>Nome:</label></td>
+                        <td><input type="text" name="nome"></td>
+                        <td><label>Sobrenome:</label></td>
+                        <td><input type="text" name="sobrenome"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Nascimento:</label></td>
+                        <td><input type="text" name="dia" id="dia" size="2" maxlength="2" placeholder="dd" required> <input type="text" name="mes" id="mes" size="2" maxlength="2" placeholder="mm" required> <input type="text" name="ano" id="dia" size="4" maxlength="4" placeholder="aaaa" required></td>
+                   </tr>
+                    <tr>
+                        <td><label>RG:</td>
+                            <td><input type="text" name= "rg" size="7" maxlength="7"></label></td>
+                    </tr>
+                    <tr>
+                        <td><label>CPF: </label></td>
+                        <td><input type="text" name="CPF" size="9" maxlength="9">-<input type="text" size="2" maxlength="2" ></td>
+                    </tr>
+                </table>        
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Dados de Endereço</legend>
+                <table>
+                    <tr>
+                        <td><label>Rua: </label></td>
+                        <td><input type="text" name="rua"></td>
+                        <td><label> Número: </label></td>
+                        <td><input type="text" name="número" size="5"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Bairro: </label></td>
+                        <td><input type="text" name="bairro"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Estado: </label></td>
+                        <td><select name="estado"> 
+                                <option name="ac">Acre</option> 
+                                <option name="al">Alagoas</option> 
+                                <option name="am">Amazonas</option> 
+                                <option name="ap">Amapá</option> 
+                                <option name="ba">Bahia</option> 
+                                <option name="ce">Ceará</option> 
+                                <option name="df">Distrito Federal</option> 
+                                <option name="es">Espírito Santo</option> 
+                                <option name="go">Goiás</option> 
+                                <option name="ma">Maranhão</option> 
+                                <option name="mt">Mato Grosso</option> 
+                                <option name="ms">Mato Grosso do Sul</option> 
+                                <option name="mg">Minas Gerais</option> 
+                                <option name="pa">Pará</option> 
+                                <option name="pb">Paraíba</option> 
+                                <option name="pr">Paraná</option> 
+                                <option name="pe">Pernambuco</option> 
+                                <option name="pi">Piauí</option> 
+                                <option name="rj">Rio de Janeiro</option> 
+                                <option name="rn">Rio Grande do Norte</option> 
+                                <option name="ro">Rondônia</option> 
+                                <option name="rs">Rio Grande do Sul</option> 
+                                <option name="rr">Roraima</option> 
+                                <option name="sc">Santa Catarina</option> 
+                                <option name="se">Sergipe</option> 
+                                <option name="sp">São Paulo</option> 
+                                <option name="to">Tocantins</option>
+                                
+                            </select>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td><label>Cidade: </label></td>
+                        <td><input type="text" name="cidade"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>CEP: </label></td>
+                        <td><input type="text" name="CEF" size="5" maxlength="5">-<input type="text" size="3" maxlength="3" ></td>
+                    </tr>
+                </table>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Dados de login</legend>
+                <table>
+                    <tr>
+                        <td><label>E-mail: </label></td>
+                        <td><input type="text" name="e-mail"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Imagem de perfil: </label></td>
+                        <td><input type="file" name="imagem" required></td>
+                    </tr>
+                    <tr>
+                        <td><label> Login de usuário: </label></td>
+                        <td><input type="text" name="login"></td>
+                    </tr>
+                    <tr>
+                        <td><label> Senha: </label></td>
+                        <td><input type="password" name="pass" required></td>
+                    </tr>
+                    <tr>
+                        <td><label> Confirme a senha:</label></td>
+                        <td><input type="password" name="pass2"></td>
+                    </tr>
+                </table>          
+                
+            </fieldset>
+
+            <p><input type="submit" value="ENVIAR"> <input type="reset" value="LIMPAR"></p>
+
+        </form>
+    </div>
+    
+    
+</body>
+</html>
